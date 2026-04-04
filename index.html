@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Avinash — Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet" />
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- ░░ NAV ░░ -->
+    <header class="nav" id="top">
+        <div class="nav__brand">AV<span>.</span></div>
+        <nav class="nav__links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- ░░ HERO ░░ -->
+    <section id="home" class="hero">
+        <div class="hero__bg">
+            <div class="blob blob--1"></div>
+            <div class="blob blob--2"></div>
+            <div class="blob blob--3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero__content">
+            <p class="hero__eyebrow"><i class="fa-solid fa-terminal"></i>&nbsp; Cloud &amp; DevOps Enthusiast</p>
+            <h1 class="hero__title">
+                Hi, I'm<br />
+                <span class="hero__name">Avinash</span>
+            </h1>
+            <p class="hero__sub">I build cloud-native apps &amp; deploy them reliably.<br />Turning ideas into hosted,
+                scalable solutions.</p>
+            <div class="hero__cta-group">
+                <a class="btn btn--primary" href="#projects"><i class="fa-solid fa-rocket"></i>&nbsp; View Projects</a>
+                <a class="btn btn--ghost" href="#contact"><i class="fa-solid fa-envelope"></i>&nbsp; Contact Me</a>
+            </div>
+            <div class="hero__badges">
+                <span><i class="fa-brands fa-aws"></i> AWS</span>
+                <span><i class="fa-brands fa-github"></i> GitHub</span>
+                <span><i class="fa-solid fa-cloud"></i> CloudFront</span>
+                <span><i class="fa-solid fa-database"></i> S3</span>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ░░ ABOUT ░░ -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-label"><span>01</span> About</div>
+            <div class="about__grid">
+                <div class="about__text">
+                    <h2 class="section-title">Who I Am</h2>
+                    <p>I'm Avinash, a passionate developer and cloud enthusiast with a love for building clean,
+                        functional applications. From textile management systems to fun word games, I enjoy solving real
+                        problems with code.</p>
+                    <p>Currently exploring the world of AWS, DevOps, and cloud infrastructure — one deployment at a
+                        time.</p>
+                    <div class="about__skills">
+                        <span><i class="fa-brands fa-html5"></i> HTML/CSS</span>
+                        <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span><i class="fa-brands fa-python"></i> Python</span>
+                        <span><i class="fa-brands fa-aws"></i> AWS S3</span>
+                        <span><i class="fa-solid fa-network-wired"></i> CloudFront</span>
+                        <span><i class="fa-brands fa-git-alt"></i> Git</span>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <div class="about__avatar">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <span class="stat__num">3+</span>
+                            <span class="stat__label">Projects Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__num">AWS</span>
+                            <span class="stat__label">Cloud Hosted</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__num">100%</span>
+                            <span class="stat__label">Free Tier</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ░░ PROJECTS ░░ -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-label"><span>02</span> Projects</div>
+            <h2 class="section-title">What I've Built</h2>
+            <p class="section-sub">A selection of projects I've designed, developed, and deployed.</p>
+
+            <div class="cards">
+
+                <!-- Card 1 -->
+                <article class="card">
+                    <div class="card__top">
+                        <div class="card__icon"><i class="fa-solid fa-shirt"></i></div>
+                        <div class="card__tags">
+                            <span>Python</span><span>MySQL</span><span>Inventory</span>
+                        </div>
+                    </div>
+                    <h3 class="card__title">Textile Manager</h3>
+                    <p class="card__desc">A full-featured textile inventory management system to track stock, orders,
+                        and suppliers — streamlining operations for small textile businesses.</p>
+                    <div class="card__footer">
+                        <a href="#" class="card__link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="card__link card__link--live"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card card--featured">
+                    <div class="card__badge">Featured</div>
+                    <div class="card__top">
+                        <div class="card__icon"><i class="fa-solid fa-bowl-food"></i></div>
+                        <div class="card__tags">
+                            <span>React</span><span>API</span><span>Health</span>
+                        </div>
+                    </div>
+                    <h3 class="card__title">HealMeal</h3>
+                    <p class="card__desc">A food recipe app focused on healthy eating. Search, discover, and save
+                        nutritious recipes powered by a live food API — your personal healthy meal planner.</p>
+                    <div class="card__footer">
+                        <a href="#" class="card__link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="card__link card__link--live"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <div class="card__top">
+                        <div class="card__icon"><i class="fa-solid fa-w"></i></div>
+                        <div class="card__tags">
+                            <span>JavaScript</span><span>Game</span><span>CSS</span>
+                        </div>
+                    </div>
+                    <h3 class="card__title">Wordle Clone</h3>
+                    <p class="card__desc">A fully functional Wordle clone built from scratch with JavaScript. Guess the
+                        5-letter word in 6 tries — complete with colour-coded feedback and a clean UI.</p>
+                    <div class="card__footer">
+                        <a href="#" class="card__link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="card__link card__link--live"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ░░ CONTACT ░░ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-label"><span>03</span> Contact</div>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-sub">Have a project idea or just want to connect? My inbox is open.</p>
+            <a class="btn btn--primary btn--lg" href="mailto:avinashshrimal66@gmail.com">
+                <i class="fa-solid fa-paper-plane"></i>&nbsp; Say Hello
+            </a>
+            <div class="contact__socials">
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ░░ FOOTER ░░ -->
+    <footer class="footer" id="contact-footer">
+        <div class="container">
+            <p>© 2025 Avinash &mdash; Hosted on <i class="fa-brands fa-aws"></i> AWS S3 + CloudFront</p>
+            <a href="#top" class="footer__back"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        const toggle = document.getElementById('navToggle');
+        const navLinks = document.querySelector('.nav__links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('nav__links--open'));
+
+        // Sticky nav shadow
+        window.addEventListener('scroll', () => {
+            document.querySelector('.nav').classList.toggle('nav--scrolled', window.scrollY > 40);
+        });
+
+        // Fade-in on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.card, .about__grid, .contact').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
