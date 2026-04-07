@@ -132,3 +132,23 @@ Visit: http://YOUR\_EC2\_IP
 
 \- Manual cloud deployment is the foundation before CI/CD automation
 
+
+## CI/CD Pipeline (Task 3)
+
+This project uses GitHub Actions to automatically build and push the Docker image on every push to main.
+
+### How it works
+1. Code is pushed to GitHub
+2. GitHub Actions triggers automatically
+3. Docker image is built
+4. Image is pushed to Docker Hub
+
+### Docker Hub Image
+docker pull avinashshrimal/portfolio-website:latest
+
+### CI Status
+Pipeline file: .github/workflows/docker-ci.yml
+
+
+
+
