@@ -1,4 +1,4 @@
-name: Docker CI Pipeline
+name: Docker CI/CD Pipeline
 
 on:
   push:
@@ -24,3 +24,20 @@ jobs:
 
       - name: Push Docker Image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/portfolio-website:latest
+
+  deploy:
+    needs: docker-build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to VM
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          script: |
+            docker pull ${{ secrets.DOCKER_USERNAME }}/portfolio-website:latest
+            docker stop app || true
+            docker rm app || true
+            docker run -d --name app -p 8080:80 ${{ secrets.DOCKER_USERNAME }}/portfolio-website:latest
