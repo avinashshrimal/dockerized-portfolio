@@ -150,5 +150,16 @@ docker pull avinashshrimal/portfolio-website:latest
 Pipeline file: .github/workflows/docker-ci.yml
 
 
+## CD Pipeline + Nginx Reverse Proxy (Task 4)
 
+### Deployment Architecture
+Developer pushes code → GitHub Actions builds Docker image → pushes to Docker Hub → SSHs into EC2 → pulls latest image → runs container → Nginx reverse proxy serves it on port 80
+
+### Nginx Role
+Nginx acts as a reverse proxy — it receives all traffic on port 80 and forwards it to the Docker container running on port 8080. This is industry-standard production architecture.
+
+### New GitHub Secrets Added
+- VM_HOST — EC2 public IP
+- VM_USER — ubuntu
+- VM_SSH_KEY — private SSH key for automated deployment
 
